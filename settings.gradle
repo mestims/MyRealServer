@@ -1,4 +1,5 @@
 rootProject.name = 'MyRealServer'
 include 'EurekaServer'
 include 'AuthService'
+include 'ImageService'
 
