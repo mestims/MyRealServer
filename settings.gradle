@@ -1,2 +1,3 @@
 rootProject.name = 'MyRealServer'
+include 'EurekaServer'
 
