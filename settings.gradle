@@ -3,4 +3,5 @@ include 'EurekaServer'
 include 'AuthService'
 include 'ImageService'
 include 'GalleryService'
+include 'ZuulService'
 
