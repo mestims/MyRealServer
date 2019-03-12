@@ -1,0 +1,9 @@
+-Estudar {
+    - spring-boot-devtools
+    - estudar mais sobre beans e autowired para fazer uma injeção de dependencia melhor
+    - estudar sobre @service
+    - melhor maneira de gerenciar variaves comuns entre micro serviços(se é anti pattern ou nao )
+    - como subir todos os serviços simultaneamente(docker talvez ou com java -jar mesmo)
+}
+
+-Ler -> Artigo Netflix (Nginx)
