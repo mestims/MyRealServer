@@ -4,6 +4,7 @@
     - estudar sobre @service
     - melhor maneira de gerenciar variaves comuns entre micro serviços(se é anti pattern ou nao )
     - como subir todos os serviços simultaneamente(docker talvez ou com java -jar mesmo)
+    -circuit breaker
 }
 
 -Ler -> Artigo Netflix (Nginx)
