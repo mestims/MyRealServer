@@ -8,7 +8,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient
 @EnableEurekaClient
 class ImageApplication
 
-fun main(args: Array<String>) {
-    runApplication<ImageApplication>(*args)
+fun main() {
+    runApplication<ImageApplication>()
 }
 
