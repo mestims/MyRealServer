@@ -6,6 +6,8 @@
       <module name="br.com.server.MyRealServer.test" target="1.8" />
       <module name="br.com.server.ZuulService.main" target="1.8" />
       <module name="br.com.server.ZuulService.test" target="1.8" />
+      <module name="FirebaseService.main" target="1.8" />
+      <module name="FirebaseService.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
