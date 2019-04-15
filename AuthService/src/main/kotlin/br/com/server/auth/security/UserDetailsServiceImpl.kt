@@ -17,10 +17,12 @@ class UserDetailsServiceImpl : UserDetailsService {
 
     override fun loadUserByUsername(username: String?): UserDetails {
 
-        for (user in userRepository.getUsers()) {
-            if (user.username == username) {
-                val grantedAuthorities = AuthorityUtils.commaSeparatedStringToAuthorityList("ROLE_${user.role}")
-                return User(user.username, user.password, grantedAuthorities)
+        userRepository.getUsers()?.let {
+            for (user in it) {
+                if (user.username == username) {
+                    val grantedAuthorities = AuthorityUtils.commaSeparatedStringToAuthorityList("ROLE_${user.role}")
+                    return User(user.username, user.password, grantedAuthorities)
+                }
             }
         }
         throw UsernameNotFoundException("Username: $username not found")

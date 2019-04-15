@@ -45,6 +45,7 @@ class UserCredentialsFilter(
     ) {
         val currentTime = System.currentTimeMillis()
         val token = Jwts.builder()
+            .setSubject(authResult?.name)
             .claim("authorities", authResult?.authorities?.map { it.authority })
             .setIssuedAt(Date(currentTime))
             .setExpiration(Date(currentTime + jwtTemplate.expiration))
