@@ -5,6 +5,7 @@ import javax.annotation.PostConstruct
 import com.google.firebase.FirebaseApp
 import com.google.auth.oauth2.GoogleCredentials
 import com.google.firebase.FirebaseOptions
+import org.springframework.context.annotation.Bean
 import java.io.FileInputStream
 
 
@@ -13,7 +14,7 @@ import java.io.FileInputStream
 class FirebaseInitializer {
 
     @PostConstruct
-    fun init() {
+    fun initializeFirebase() {
         val serviceAccount = FileInputStream("serviceAccountKey.json")
 
         val options = FirebaseOptions.Builder()
